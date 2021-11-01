@@ -1,0 +1,7 @@
+.banner-area {
+    background: url('../../images/call-to-action-paralax.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
