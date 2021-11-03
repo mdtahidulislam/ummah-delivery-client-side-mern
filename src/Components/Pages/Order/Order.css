@@ -1,0 +1,9 @@
+.order-form form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.order-form form input, 
+.order-form form textarea {
+    width: 100%;
+}

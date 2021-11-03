@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import useAuth from '../../../Hooks/useAuth';
+import './Order.css';
 
 const Order = () => {
     const { user } = useAuth();
@@ -76,6 +77,7 @@ const Order = () => {
                                     {...register("address", { required: true })} placeholder="Enter Address"
                                     className="mb-3"
                                 ></textarea>
+                                <br />
                                 <input type="submit" value="Purchase" />
                             </form>
                         </div>
