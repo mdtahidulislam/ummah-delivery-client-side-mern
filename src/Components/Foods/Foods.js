@@ -6,7 +6,9 @@ import FoodCard from '../FoodCard/FoodCard'
 const Foods = () => {
     const [foods, setFoods] = useState([]);
     useEffect(() => {
-        fetch('https://stormy-savannah-60822.herokuapp.com/foods')
+        fetch('https://stormy-savannah-60822.herokuapp.com/foods', {
+            mode: 'no-cors'
+        })
             .then(res => res.json())
             .then(data => setFoods(data))
     }, [])
