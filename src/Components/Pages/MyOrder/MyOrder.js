@@ -10,7 +10,7 @@ const MyOrder = () => {
     console.log(orders);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orders?userId=${user.uid}`)
+        fetch(`https://stormy-savannah-60822.herokuapp.com/orders?userId=${user.uid}`)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [])
@@ -19,7 +19,7 @@ const MyOrder = () => {
     const cancelOrder = id => {
         const proceed = window.confirm('Are you sure, you want to delete');
         if (proceed) {
-            fetch(`http://localhost:5000/orders/${id}`, {
+            fetch(`https://stormy-savannah-60822.herokuapp.com/orders/${id}`, {
                 method: "DELETE"
             })
                 // update ui

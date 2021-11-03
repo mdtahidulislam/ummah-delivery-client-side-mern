@@ -10,7 +10,7 @@ const Order = () => {
     const [food, setFood] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/foods/${id}`)
+        fetch(`https://stormy-savannah-60822.herokuapp.com/foods/${id}`)
             .then(res => res.json())
             .then(data => setFood(data))
     }, [id])
@@ -28,7 +28,7 @@ const Order = () => {
             foodImg: food.img
         }
         console.log(order);
-        fetch('http://localhost:5000/orders', {
+        fetch('https://stormy-savannah-60822.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
