@@ -1,0 +1,14 @@
+.card img {
+    min-height: 312px;
+}
+
+.order-btn {
+    background: #c33332;
+    color: #fff;
+    border: 2px solid #c33332;
+}
+
+.order-btn:hover {
+    color: #c33332;
+    background: #fff;
+}

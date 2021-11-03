@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../../Banner/Banner'
-import Foods from '../../Sections/Foods/Foods';
+import Foods from '../../Foods/Foods';
 
 const Home = () => {
     return (
